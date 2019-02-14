@@ -1,0 +1,18 @@
+<div class="card text-center">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h3>Nombre: {{heroe.nombre | uppercase}}</h3>
+    <img class="card-img-top" [src]="heroe.img">
+    <hr>
+    <h5 class="card-title">Fecha de aparición: <small>{{heroe.aparicion | date:'y'}}</small></h5>
+    <p class="card-text">{{heroe.bio}}</p>
+    
+  </div>
+  <div class="card-footer text-muted">
+      <div>
+        <img [src]="heroe.img_casa" width="230" height="200">
+      </div>
+  </div>
+  <a [routerLink]="['/heroes']"  class="btn btn-outline-primary">Regresar</a>
+</div>
