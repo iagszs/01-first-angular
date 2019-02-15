@@ -1,8 +1,9 @@
 <h1><small>Marvel y DC</small></h1>
 <hr>
 <div class="card-columns">
+  <app-heroe-tarjeta [heroe]="heroe" [indice]="heroe.idx" *ngFor="let heroe of heroes; let i = index; let i = index"></app-heroe-tarjeta>
 
-  <div class="card animated fadeIn fast" style="width: 18rem;" *ngFor="let heroe of heroes; let i = index">
+  <!-- <div class="card animated fadeIn fast" style="width: 18rem;" *ngFor="let heroe of heroes; let i = index">
     <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
     <div class="card-body">
       <h5 class="card-title">{{heroe.nombre}}</h5>
@@ -12,8 +13,7 @@
       type="button" class="btn btn-outline-primary btn-block">
         Ver más..
       </button>
-      <!-- <a [routerLink]="['/heroe', i]"  class="btn btn-outline-primary">Ver más..</a> -->
     </div>
-  </div>
+  </div> -->
 
 </div>
